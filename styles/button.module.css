@@ -1,0 +1,9 @@
+.customButton{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 220px;
+    height: 70px;
+    font-size: 20px;
+    cursor: pointer;
+}
