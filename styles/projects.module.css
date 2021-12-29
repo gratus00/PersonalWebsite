@@ -1,18 +1,16 @@
-.about{
-    text-align: center;
-    height: calc(100vh - 60px);
-    display: flex;
+.project{
+    text-align: left;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
+    
 }
 
-.about h1{
-    font-size: 20px;
-    margin: 0;
+.project h1{
+    font-size: 35px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
-.about p{
-    font-size: 20px;
-    margin-bottom: 50px;
+.project p{
+    font-size: 17px;
 }

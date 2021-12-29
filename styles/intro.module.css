@@ -1,18 +1,23 @@
-.home{
-    /* text-align: center;
-    height: calc(100vh - 60px);
+.intro{
+    text-align: right;
+    margin-top: 40vh;
+    margin-bottom: 40vh; 
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    /* height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; */
 }
 
-.home h1{
+.intro h1{
     /* font-size: 60px;
     margin:0; */
 }
 
-.home p {
+.intro p {
     /* font-size: 20px;
     margin-bottom: 50px; */
 }

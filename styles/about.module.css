@@ -1,24 +1,15 @@
 .about{
-    height: calc(100vh - 60px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .about h1{
-    box-sizing: border-box;
     text-align: start;
     font-size: 40px;
-    margin: 0;
-    width: 100%;
-    padding-left: 25%;
 }
 
 .about p{
-    box-sizing: border-box;
     font-size: 20px;
-    margin-bottom: 50px;
-    padding: 0px 25%;
-    width: 100%;
 }
