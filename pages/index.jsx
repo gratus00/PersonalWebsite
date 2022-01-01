@@ -9,7 +9,7 @@ import Contacts from "./Contacts";
 
 
 const home = () => {
-    return <div className={styles.home}>
+    return <div className={styles.home} id="index-section">
                 <NavBar/>
                 {/* sidebar */}
                 <Intro/>

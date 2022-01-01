@@ -1,0 +1,27 @@
+.contacts{
+    margin-top: 20vh;
+    margin-bottom: 40vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-top: 5px;
+
+}
+
+.contacts h1{
+    font-size: 45px;
+}
+
+.contacts a{
+    font-size: 45px;
+    margin-right: 2rem;
+}
+
+.contacts button:active{
+    background-color: rgb(97, 97, 97);
+
+}
+
+.contacts button:hover{
+    background-color: rgb(51, 51, 51);
+}
+

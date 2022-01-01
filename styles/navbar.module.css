@@ -15,6 +15,47 @@
     font-size: 20px;
 }
 
+.navbar .navitem{
+    display: inline;
+}
+
+.navbar a {
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar a:active {
+    background-color: rgb(97, 97, 97);
+}
+.navbar a:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.navbar p{
+    background-color: black;
+}
+.navbar p:hover{
+    background-color: black;
+}
+
+.navbar button {
+    font-family: inherit;
+    border: none;
+    background-color: transparent;
+    flex-grow: 1;
+    cursor: pointer;
+}
+.navbar button:focus {
+    outline: none;
+}
+.navbar button:hover {
+    background-color: rgb(221, 221, 221);
+}
+
 .logoLink {
     flex-grow: 1;
 }

@@ -6,9 +6,9 @@ import dummyText from "../components/DummyText";
 
 const Projects = () => {
     return (
-        <div className={styles.project}>
+        <div className={styles.project} id="projects-section">
             <div className={styles.project}>
-                <h1>Section 1</h1>
+                <h2>Section 1</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Id nibh tortor id aliquet. Sed lectus vestibulum mattis ullamcorper
                     velit sed. Nec nam aliquam sem et tortor. Elit eget gravida cum sociis natoque. Ipsum a arcu cursus 
@@ -46,7 +46,7 @@ const Projects = () => {
                     Convallis a cras semper auctor neque vitae tempus quam. Varius quam quisque id diam vel.</p>
             </div>
             <div className={styles.project}>
-                <h1>Section 2</h1>
+                <h2>Section 2</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                     labore et dolore magna aliqua. Id nibh tortor id aliquet. Sed lectus vestibulum mattis ullamcorper
                     velit sed. Nec nam aliquam sem et tortor. Elit eget gravida cum sociis natoque. Ipsum a arcu cursus 
@@ -84,7 +84,7 @@ const Projects = () => {
                     Convallis a cras semper auctor neque vitae tempus quam. Varius quam quisque id diam vel.</p>
             </div>
             <div className={styles.project}>
-                <h1>Section 3</h1>
+                <h2>Section 3</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                     labore et dolore magna aliqua. Id nibh tortor id aliquet. Sed lectus vestibulum mattis ullamcorper
                     velit sed. Nec nam aliquam sem et tortor. Elit eget gravida cum sociis natoque. Ipsum a arcu cursus 
@@ -122,7 +122,7 @@ const Projects = () => {
                     Convallis a cras semper auctor neque vitae tempus quam. Varius quam quisque id diam vel.</p>
             </div>
             <div className={styles.project}>
-                <h1>Section 4</h1>
+                <h2>Section 4</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                     labore et dolore magna aliqua. Id nibh tortor id aliquet. Sed lectus vestibulum mattis ullamcorper
                     velit sed. Nec nam aliquam sem et tortor. Elit eget gravida cum sociis natoque. Ipsum a arcu cursus 

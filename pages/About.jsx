@@ -1,9 +1,12 @@
 import Button from "../components/Button";
-import styles from '../styles/about.module.css';
+import stylesAbout from '../styles/about.module.css';
+import stylesButton from '../styles/button.module.css';
+import Link from "react-scroll/modules/components/Link";
+import Contacts from "./Contacts";
 
 const About = () => {
     return (
-        <div className={styles.about}>
+        <div className={stylesAbout.about} id="about-section">
             <h1>About Me</h1>
             <p>
                 My name is Shakir Abdullayev, and I'm a third-year computer science student at the University of Toronto.
@@ -20,8 +23,12 @@ const About = () => {
                 <br /><br />
 
                 I am currently seeking internships for Summer 2022. You can check out my projects, resume, and contacts below!
-
-            </p> 
+            </p>
+            <br/><br/>
+            <Link to={"contacts-section"} smooth={true} duration={1000} offset={-50}>
+                <button className={stylesButton.customButton}>Contacts</button>
+            </Link>
+            
         </div>
     );
 };

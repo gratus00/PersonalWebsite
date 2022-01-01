@@ -1,5 +1,6 @@
 .customButton{
     background-color: black;
+    margin: auto;
     color: white;
     border: 1px solid white;
     width: 220px;
