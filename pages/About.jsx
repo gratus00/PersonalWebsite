@@ -17,17 +17,19 @@ const About = () => {
 
                 <br /> <br />
 
-                Throughout the last few years I have created or been part of projects in and out of school. These range from a system design 
-                coursework project with a team of 4, to small Android applications such as a GeoLocation saver app, to web apps such as this one!
+                Throughout the last few years I have created or been part of projects in and out of school. These range from system design 
+                coursework projects with a team of 4, to small Android applications, to web apps such as this one!
 
                 <br /><br />
 
                 I am currently seeking internships for Summer 2022. You can check out my projects, resume, and contacts below!
             </p>
-            <br/><br/>
+            <br/>
+            <div style={{textAlign: "center"}}>
             <Link to={"contacts-section"} smooth={true} duration={1000} offset={-50}>
                 <button className={stylesButton.customButton}>Contacts</button>
             </Link>
+            </div>
             
         </div>
     );

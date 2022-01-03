@@ -12,7 +12,7 @@
     text-decoration: none;
     color: white;
     padding: 0px 10px;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .navbar .navitem{
@@ -20,11 +20,11 @@
 }
 
 .navbar a {
-    /* flex-grow: 1; */
-    /* flex-shrink: 0; */
+    flex-grow: 1; 
+    flex-shrink: 0; 
     padding: 1rem;
     color: rgb(255, 255, 255);
-    text-align: right;
+    text-align: center;
     text-decoration: none;
     cursor: pointer;
 }
@@ -35,10 +35,10 @@
     background-color: rgb(51, 51, 51);
 }
 
-.navbar p{
+.navbar h1{
     background-color: black;
 }
-.navbar p:hover{
+.navbar h1:hover{
     background-color: black;
 }
 

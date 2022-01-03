@@ -1,18 +1,24 @@
 .about{
-    margin-top: 40vh;
-    margin-bottom: 40vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    margin-bottom: 10rem;
+    padding-top: 2.4rem;
 }
 
 .about h1{
     text-align: start;
-    font-size: 40px;
+    font-size: 2.4rem;
 }
 
 .about p{
-    font-size: 20px;
+    font-size: 1.3rem;
+}
+
+.about button{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .about button:active{

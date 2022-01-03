@@ -1,19 +1,21 @@
 .contacts{
-    margin-top: 20vh;
-    margin-bottom: 40vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    padding-top: 5px;
-
+    display: inline-block;
+    text-align: left;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    padding-top: 2rem;
 }
 
 .contacts h1{
-    font-size: 45px;
+    font-size: 2.4rem;
+}
+
+.contacts p{
+    font-size: 1.3rem;
 }
 
 .contacts a{
-    font-size: 45px;
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
 
 .contacts button:active{

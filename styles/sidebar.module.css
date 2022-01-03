@@ -1,0 +1,58 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20vh;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    min-width: 100vw;
+    min-height: 120vh;
+    transition: 0.8s ease; 
+    z-index: 1;
+}
+.menu a {
+    padding: 3vh;
+    text-decoration: none;
+    color: White;
+    font-size: calc(1rem + 0.5vh + 1vw);
+    cursor: pointer;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
+.menu .spacer {
+    min-height: 20vh;
+}
+/* .menu .blog-button {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+    padding: 3vh;
+} */
+@media screen and (min-width:850px)
+{
+    .sidebar-button {
+        display: none;
+    }
+}
+.sidebar-button {
+    display: static;
+    position: fixed;
+    right:0;
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+    z-index: 2;
+    cursor: pointer;
+}
+.sidebar-button:focus{
+    outline: none;
+}
+
+.sidebar img {
+    border-radius: 0;
+    max-height: 1.2rem;
+    min-width: 1.5rem;
+}

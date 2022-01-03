@@ -1,7 +1,6 @@
 import NavBar from "../components/NavBar";
-import Button from "../components/Button";
-import styles from "../styles/home.module.css";
-import Section from "../components/Section";
+import SideBar from "../components/SideBar";
+import homeStyle from "../styles/home.module.css";
 import About from "./About";
 import Projects from "./Projects";
 import Intro from "./Intro";
@@ -9,19 +8,19 @@ import Contacts from "./Contacts";
 
 
 const home = () => {
-    return <div className={styles.home} id="index-section">
+    return <div id="index-section">
                 <NavBar/>
-                {/* sidebar */}
+                <SideBar/>
                 <Intro/>
-                <div>
+                <div  className={homeStyle.home}>
                     <div className="spacer"/>
                     <About/>
                     <div className="spacer"/>
                     <Projects/>
                     <Contacts/>
-                    {/*Footer*/}
                     
-                </div>
+                    {/*Footer*/}
+                </div>                               
             </div>
     ;
 };

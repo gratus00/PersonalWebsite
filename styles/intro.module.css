@@ -1,9 +1,9 @@
 .intro{
     text-align: right;
-    margin-top: 40vh;
-    margin-bottom: 40vh; 
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-top: 35vh;
+    margin-bottom: 55vh; 
+    margin-left: 15vw;
+    margin-right: 15vw;
 
     /* height: calc(100vh - 60px);
     display: flex;
@@ -13,11 +13,5 @@
 }
 
 .intro h1{
-    /* font-size: 60px;
-    margin:0; */
-}
-
-.intro p {
-    /* font-size: 20px;
-    margin-bottom: 50px; */
+    font-size: 2.63rem;
 }
