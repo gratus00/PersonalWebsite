@@ -1,6 +1,14 @@
 .contacts{
-    display: inline-block;
-    text-align: left;
+    /* display: inline-block;
+    text-align: left; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+
+
+
     margin-top: 10rem;
     margin-bottom: 5rem;
     padding-top: 2rem;

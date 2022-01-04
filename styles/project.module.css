@@ -1,15 +1,21 @@
 .project{
-    display: inline-block;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     max-width: 50rem;
-    
+    padding-top: 2.4rem;
 }
 
 .project h1{
+    text-align: start;
     font-size: 2.4rem;
+}
+
+.project h2{
+    text-align: start;
+    font-size: 2rem;
 }
 
 .project p{
     font-size: 1.3rem;
 }
+

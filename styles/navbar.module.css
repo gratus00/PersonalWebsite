@@ -1,25 +1,20 @@
 .navbar{
     background-color: black;
     height: 60px;
-    padding: 0px 10px;
+    padding: 0px;
     display: flex;
     align-items: center;
     position: sticky; 
     top: 0;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: white;
-    padding: 0px 10px;
-    font-size: 1.25rem;
-}
 
 .navbar .navitem{
     display: inline;
 }
 
 .navbar a {
+    font-size: 1.25rem;
     flex-grow: 1; 
     flex-shrink: 0; 
     padding: 1rem;
@@ -58,4 +53,18 @@
 
 .logoLink {
     flex-grow: 1;
+}
+
+@media screen and (max-width:850px)
+{
+    .desktop {
+        display: none;
+    }
+    .nav-bar a {
+        text-align: left;
+    }
+    .mobile {
+        content: "";
+        flex-grow: 10;
+    }
 }

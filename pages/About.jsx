@@ -1,8 +1,6 @@
-import Button from "../components/Button";
 import stylesAbout from '../styles/about.module.css';
 import stylesButton from '../styles/button.module.css';
 import Link from "react-scroll/modules/components/Link";
-import Contacts from "./Contacts";
 
 const About = () => {
     return (
@@ -30,7 +28,6 @@ const About = () => {
                 <button className={stylesButton.customButton}>Contacts</button>
             </Link>
             </div>
-            
         </div>
     );
 };

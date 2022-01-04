@@ -23,14 +23,7 @@
 .menu .spacer {
     min-height: 20vh;
 }
-/* .menu .blog-button {
-    background-color: transparent;
-    border: none;
-    text-decoration: none;
-    font: inherit;
-    color: inherit;
-    padding: 3vh;
-} */
+
 @media screen and (min-width:850px)
 {
     .sidebar-button {
@@ -40,10 +33,11 @@
 .sidebar-button {
     display: static;
     position: fixed;
-    right:0;
+    right: 0;
+    top: 0;
     background-color: transparent;
     border: none;
-    padding: 1rem;
+    padding: 1.1rem;
     z-index: 2;
     cursor: pointer;
 }
@@ -53,6 +47,6 @@
 
 .sidebar img {
     border-radius: 0;
-    max-height: 1.2rem;
-    min-width: 1.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
 }

@@ -13,12 +13,9 @@ const home = () => {
                 <SideBar/>
                 <Intro/>
                 <div  className={homeStyle.home}>
-                    <div className="spacer"/>
                     <About/>
-                    <div className="spacer"/>
                     <Projects/>
                     <Contacts/>
-                    
                     {/*Footer*/}
                 </div>                               
             </div>

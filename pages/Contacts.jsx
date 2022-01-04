@@ -24,7 +24,6 @@ const Contacts = () => {
         <br />
 
         <div>
-            <div className="invisible-spacer" />
             <div style={{textAlign: "center"}}>
               <a  href="/Resume.pdf" download="Abdullayev Shakir Resume.pdf">
                 <button  className={buttonStyle.customButton}>Download Resume</button>
