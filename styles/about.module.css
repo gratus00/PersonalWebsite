@@ -1,24 +1,21 @@
 .about{
     display: flex;
     flex-direction: column;
-    max-width: 50rem;
+    max-width: min(50rem, 65vw);
     margin-bottom: 10rem;
     padding-top: 2.4rem;
 }
 
 .about h1{
     text-align: start;
-    font-size: 2.4rem;
-}
-
-.about p{
-    font-size: 1.3rem;
 }
 
 .about button{
     align-items: center;
     text-align: center;
     justify-content: center;
+    border-radius: 10px;
+
 }
 
 .about button:active{

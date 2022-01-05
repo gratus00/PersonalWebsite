@@ -1,9 +1,10 @@
 .intro{
     text-align: right;
-    margin-top: 35vh;
+    margin-top: calc(50vh - 6rem);
     margin-bottom: 55vh; 
     margin-left: 15vw;
     margin-right: 15vw;
+    
 
     /* height: calc(100vh - 60px);
     display: flex;
@@ -13,5 +14,11 @@
 }
 
 .intro h1{
-    font-size: 4.5vw;
+    font-size: calc(1.8rem + 0.2vw);
+}
+
+@media screen and (max-width:850px) {
+    .intro h1 {
+        font-size: calc(1rem + 2.3vw);        
+    }
 }

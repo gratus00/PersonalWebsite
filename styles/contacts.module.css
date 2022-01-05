@@ -1,29 +1,49 @@
 .contacts{
-    /* display: inline-block;
-    text-align: left; */
+    /* display: inline-block;*/
+    /* text-align: left;  */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    border: 2px solid white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: min(6rem, 5vw);
+    padding-right: min(6rem, 5vw);
 
-
-
-
+    max-width: min(46.75rem, 65vw);
     margin-top: 10rem;
     margin-bottom: 5rem;
-    padding-top: 2rem;
 }
 
-.contacts h1{
-    font-size: 2.4rem;
+@media screen and (min-width:850px)
+{    
+    .contacts h2{
+        font-size: 1.5rem;
+    }
 }
 
-.contacts p{
-    font-size: 1.3rem;
+@media screen and (max-width:850px)
+{
+    .contacts h2{
+        font-size: calc(1.0rem-1vw);
+    }
+}
+
+.contacts img{
+    margin-top: 1rem;
+    border-radius: 0;
+    height: 3rem;
+    width: 3rem;
+    
+    margin-left: 0rem;
+    margin-right: 4rem;
 }
 
 .contacts a{
-    margin-right: 4rem;
+    text-align: right;
+    color: white;
+    margin-left: 0.5rem;
 }
 
 .contacts button:active{

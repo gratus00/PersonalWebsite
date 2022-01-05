@@ -38,8 +38,6 @@ const Projects = () => {
             <div>
             <h2>Section 4</h2>
             <p>blabla
-                <br /> <br />
-                <br /> <br />
             </p>
             </div>
             
