@@ -36,8 +36,7 @@
     height: 3rem;
     width: 3rem;
     
-    margin-left: 0rem;
-    margin-right: 4rem;
+    margin-right: min(7rem, 10vw);
 }
 
 .contacts a{

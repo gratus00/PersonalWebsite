@@ -20,11 +20,15 @@ const About = () => {
 
                 <br /><br />
 
+                My other hobbies include hitting the gym, playing electric guitar pieces, and playing video games. Want to argue on which 
+                guitar solo is the best or whether any Ubisoft game is good (they're not.)? Hit me up!
+                <br /><br />
+
                 I am currently seeking internships for Summer 2022. You can check out my projects, resume, and contacts below!
             </p>
             <br/>
             <div style={{textAlign: "center"}}>
-            <Link to={"contacts-section"} smooth={true} duration={1000} offset={-50}>
+            <Link to={"contacts-section"} smooth={true} duration={1200} offset={-50}>
                 <button className={stylesButton.customButton}>Contacts</button>
             </Link>
             </div>

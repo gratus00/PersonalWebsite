@@ -19,10 +19,10 @@ function SideBar(props){
         </button>
         <div className={styles.menu}
         style={{transform: `translatex(${xPosition}vw)`}}> 
-            <Link to={"index-section"} smooth={true} duration={2000} offset={-50}  className={styles.desktop} onClick={triggerSidebar}> Home</Link>
-            <Link to={"about-section"} smooth={true} duration={2000} offset={-50}  className={styles.desktop} onClick={triggerSidebar}> About</Link>
-            <Link to={"projects-section"} smooth={true} duration={2000} offset={-50}  className={styles.desktop} onClick={triggerSidebar}> Projects</Link>
-            <Link to={"contacts-section"} smooth={true} duration={2000} offset={-50}  className={styles.desktop} onClick={triggerSidebar}> Contacts</Link>    
+            <Link to={"index-section"} smooth={true} duration={1500} offset={-50}  className={styles.desktop} onClick={triggerSidebar}> Home</Link>
+            <Link to={"about-section"} smooth={true} duration={1500} offset={-50}  className={styles.desktop} onClick={triggerSidebar}> About</Link>
+            <Link to={"projects-section"} smooth={true} duration={1500} offset={-50}  className={styles.desktop} onClick={triggerSidebar}> Projects</Link>
+            <Link to={"contacts-section"} smooth={true} duration={1500} offset={-50}  className={styles.desktop} onClick={triggerSidebar}> Contacts</Link>    
         </div>
     </div>
 }

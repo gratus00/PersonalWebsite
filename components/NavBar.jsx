@@ -10,9 +10,9 @@ function NavBar(props) {
                 <a className={styles.logoLink}>SHAKIR ABDULLAYEV</a>
             </Link>
             <div className={styles.mobile}></div>
-            <Link to={"about-section"} smooth={true} duration={2000} offset={-50} className={styles.desktop}> About</Link>
-            <Link to={"projects-section"} smooth={true} duration={2000} offset={-50} className={styles.desktop}> Projects</Link>
-            <Link to={"contacts-section"} smooth={true} duration={2000} offset={-50}  className={styles.desktop}> Contacts</Link>    
+            <Link to={"about-section"} smooth={true} duration={1500} offset={-50} className={styles.desktop}> About</Link>
+            <Link to={"projects-section"} smooth={true} duration={1500} offset={-50} className={styles.desktop}> Projects</Link>
+            <Link to={"contacts-section"} smooth={true} duration={1500} offset={-50}  className={styles.desktop}> Contacts</Link>    
         </nav>
 };
 

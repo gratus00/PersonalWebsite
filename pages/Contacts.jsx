@@ -7,8 +7,8 @@ const Contacts = () => {
       <div className={styles.contacts} id="contacts-section">
           <h1>Contacts</h1>
           <h2>You can find me online in the following places:</h2>
-          <div style={{textAlign: 'center'}}>
-            <a href="https://www.linkedin.com/in/shakir-abd-000/" style={{marginLeft: 1 + 'rem'}} target="_blank">
+          <div style={{textAlign: 'left'}}>
+            <a href="https://www.linkedin.com/in/shakir-abd-000/"  target="_blank">
               <img src={"/linkedin.png"}/>
             </a>
             <a href="https://github.com/gratus00" target="_blank">
