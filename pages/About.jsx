@@ -7,7 +7,7 @@ const About = () => {
         <div className={stylesAbout.about} id="about-section">
             <h1>About Me</h1>
             <p>
-                My name is Shakir Abdullayev, and I&quot;m a third-year computer science student at the University of Toronto.
+                My name is Shakir Abdullayev, and I&apos;m a third-year computer science student at the University of Toronto.
                 I am passionate about different areas of computer science, such as Software Engineering, Cyber-Security, and 
                 Machine Learning to name a few. I am still in the exploration phase of my journey when it comes to Computer Science,
                 alas, I am not confining myself to any specific field. I am planning on spending my time as an undergrad figuring out which
@@ -21,7 +21,7 @@ const About = () => {
                 <br /><br />
 
                 My other hobbies include hitting the gym, playing electric guitar pieces, and playing video games. Want to argue on which 
-                guitar solo is the best or whether any Ubisoft game is good (they&quot;re not.)? Hit me up!
+                guitar solo is the best or whether any Ubisoft game is good (they&apos;re not.)? Hit me up!
                 <br /><br />
 
                 I am currently seeking internships for Summer 2022. You can check out my projects, resume, and contacts below!

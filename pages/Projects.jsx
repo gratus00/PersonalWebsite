@@ -55,10 +55,10 @@ const Projects = () => {
                 with an <a href="https://www.gps.gov/systems/gps/performance/accuracy/#how-accurate" target="_blank"  rel="noreferrer" style={{textDecoration: "underline"}}>accuracy of a 5 meter radius. </a> 
                 That is one of the coolest thing that humans have achieved in history.
                 <br /> <br />
-                You know what&quot;s cooler? I made an app that uses that same technology to enable a user to save locations
+                You know what&apos;s cooler? I made an app that uses that same technology to enable a user to save locations
                 in that same pocket device.
                 <br /> <br />
-                To be more descriptive, I created an Android app that utilizes Google Maps API and Android&quot;s GPS libraries,
+                To be more descriptive, I created an Android app that utilizes Google Maps API and Android&apos;s GPS libraries,
                 to enable users to save a location on their phone by simply pressing and holding a location on a map. 
                 <br /> <br />
                 If there also happens to be an address allocated to that location in the Google Maps API, that address saved as the name of that location. 
