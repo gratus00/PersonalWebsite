@@ -1,5 +1,4 @@
 import styles from "../styles/project.module.css";
-import Image from "next/image";
 
 const Projects = () => {
     return (
@@ -26,7 +25,7 @@ const Projects = () => {
 
                 </p>
 
-                <Image src="/react.png" title="React" alt="" width={48} height={48}/> <Image src="/nextjs.png" title = "Next.js" alt="" width={48} height={48}/>
+                <img src="/react.png" title="React" alt=""/> <img src="/nextjs.png" title = "Next.js" alt=""/>
             </div>
             
             
@@ -43,7 +42,7 @@ const Projects = () => {
 
                 </p>
                 
-                <Image src="/android.png" title="Android" alt="" width={48} height={48}/> <Image src="/java.png" title = "Java" alt="" width={48} height={48}/>
+                <img src="/android.png" title="Android" alt=""/> <img src="/java.png" title = "Java" alt=""/>
             </div>
             
             
@@ -66,7 +65,7 @@ const Projects = () => {
                 Feel free to click the header to check out the repository!
 
             </p>
-            <Image src="/googlemaps.png" title="Google Maps" alt="" width={48} height={48}/> <Image src="/android.png" title="Android" alt="" width={48} height={48}/> <Image src="/java.png" title = "Java" alt="" width={48} height={48}/>
+            <img src="/googlemaps.png" title="Google Maps" alt=""/> <img src="/android.png" title="Android" alt=""/> <img src="/java.png" title = "Java" alt=""/>
             </div>
         
 
@@ -94,7 +93,7 @@ const Projects = () => {
                     <br /><br />
                     Feel free to click the header to check out the repository!
                 </p>
-                <Image src="/googlemaps.png" title="Google Maps" alt="" width={48} height={48}/> <Image src="/android.png" title="Android" alt="" width={48} height={48}/> <Image src="/java.png" title = "Java" alt="" width={48} height={48}/>
+                <img src="/googlemaps.png" title="Google Maps" alt=""/> <img src="/android.png" title="Android" alt=""/> <img src="/java.png" title = "Java" alt=""/>
             </div>
         </div>
     );
