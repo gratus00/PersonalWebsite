@@ -4,7 +4,7 @@ const Projects = () => {
     return (
         <div className={styles.project} id="projects-section">
             <h1>Projects</h1>
-            <span>click on projects to see more! <br /><br /></span>
+            <span>click on project titles to see more! <br /><br /></span>
             <div>
             <h2> <a href="https://github.com/gratus00/PersonalWebsite" target="_blank" rel="noreferrer">Personal Website</a></h2>
             <p> During the time I had on my winter break, I decided to explore an area I have 

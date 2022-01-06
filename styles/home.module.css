@@ -3,7 +3,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background: black; 
+    background: -webkit-linear-gradient(to left, #545454, #000000);
+    background: linear-gradient(to left, #545454, #000000);
+    
 }
 
 
@@ -14,7 +17,7 @@
     }
     
     .home h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     .home p {
@@ -25,14 +28,14 @@
 @media screen and (max-width:850px)
 {
     .home h1{
-        font-size: calc(2rem-2vw);
+        font-size: calc(2rem);
     }
     
     .home h2{
-        font-size: calc(1.5rem-2vw);
+        font-size: calc(1.3rem);
     }
     
     .home p {
-        font-size: calc(1.2rem-2vw);
+        font-size: calc(1.1rem);
     }
 }
