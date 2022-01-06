@@ -26,7 +26,7 @@ const Projects = () => {
 
                 </p>
 
-                <Image src="/react.png" title="React" alt=""/> <Image src="/nextjs.png" title = "Next.js" alt=""/>
+                <Image src="/react.png" title="React" alt="" width={48} height={48}/> <Image src="/nextjs.png" title = "Next.js" alt="" width={48} height={48}/>
             </div>
             
             
@@ -43,7 +43,7 @@ const Projects = () => {
 
                 </p>
                 
-                <Image src="/android.png" title="Android" alt=""/> <Image src="/java.png" title = "Java" alt=""/>
+                <Image src="/android.png" title="Android" alt="" width={48} height={48}/> <Image src="/java.png" title = "Java" alt="" width={48} height={48}/>
             </div>
             
             
@@ -66,35 +66,35 @@ const Projects = () => {
                 Feel free to click the header to check out the repository!
 
             </p>
-            <Image src="/googlemaps.png" title="Google Maps" alt=""/> <Image src="/android.png" title="Android" alt=""/> <Image src="/java.png" title = "Java" alt=""/>
+            <Image src="/googlemaps.png" title="Google Maps" alt="" width={48} height={48}/> <Image src="/android.png" title="Android" alt="" width={48} height={48}/> <Image src="/java.png" title = "Java" alt="" width={48} height={48}/>
             </div>
         
 
             <div>
-            <h2> <a href="https://github.com/gratus00/Your-Location-Snapshot" target="_blank"  rel="noreferrer">Your Location Snapshot</a> </h2>
-            <p> This app was created with a certain scenario in mind: imagine you are stuck in a place
-                that you are not familiar with. You have low battery and you must give precise location information to your family 
-                or friends that are searching for you. 
-                <br /><br />
-                Well, with <b>Your Location Snapshot</b>, you can open the app that has the following information:
-                <ul>
-                    <li>Latitude</li>
-                    <li>Longitude</li>
-                    <li>Accuracy of GPS data</li>
-                    <li>Altitude</li>
-                    <li>Address (if it exists).</li>
-                </ul> 
+                <h2> <a href="https://github.com/gratus00/Your-Location-Snapshot" target="_blank"  rel="noreferrer">Your Location Snapshot</a> </h2>
+                <p> This app was created with a certain scenario in mind: imagine you are stuck in a place
+                    that you are not familiar with. You have low battery and you must give precise location information to your family 
+                    or friends that are searching for you. 
+                    <br /><br />
+                    Well, with <b>Your Location Snapshot</b>, you can open the app that has the following information:
+                    <ul>
+                        <li>Latitude</li>
+                        <li>Longitude</li>
+                        <li>Accuracy of GPS data</li>
+                        <li>Altitude</li>
+                        <li>Address (if it exists).</li>
+                    </ul> 
 
-                and just take a screenshot. It is fast, accessible, does not cost large battery power,
-                and does not require any taps on a screen. 
-                
-                <br /><br />
-                Open. Screenshot. 
-                <br /><br />
-                <br /><br />
-                Feel free to click the header to check out the repository!
-            </p>
-            <Image src="/googlemaps.png" title="Google Maps" alt=""/> <Image src="/android.png" title="Android" alt=""/> <Image src="/java.png" title = "Java" alt=""/>
+                    and just take a screenshot. It is fast, accessible, does not cost large battery power,
+                    and does not require any taps on a screen. 
+                    
+                    <br /><br />
+                    Open. Screenshot. 
+                    <br /><br />
+                    <br /><br />
+                    Feel free to click the header to check out the repository!
+                </p>
+                <Image src="/googlemaps.png" title="Google Maps" alt="" width={48} height={48}/> <Image src="/android.png" title="Android" alt="" width={48} height={48}/> <Image src="/java.png" title = "Java" alt="" width={48} height={48}/>
             </div>
         </div>
     );

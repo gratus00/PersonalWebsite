@@ -1,7 +1,6 @@
 import styles from "../styles/contacts.module.css";
 import buttonStyle from "../styles/button.module.css";
 import React from "react";
-import Image from "next/image";
 
 const Contacts = () => {
     return (
@@ -10,10 +9,10 @@ const Contacts = () => {
           <h2>You can find me online in the following places:</h2>
           <div style={{textAlign: "left"}}>
             <a href="https://www.linkedin.com/in/shakir-abd-000/" style={{marginLeft: "0.5rem"}}  target="_blank" rel="noreferrer">
-              <Image src={"/linkedin.png"} alt=""/>
+              <img src={"/linkedin.png"} alt=""/>
             </a>
             <a href="https://github.com/gratus00" target="_blank" rel="noreferrer">
-              <Image src={"/github.png"} alt=""/> 
+              <img src={"/github.png"} alt=""/> 
             </a>
           </div>
 

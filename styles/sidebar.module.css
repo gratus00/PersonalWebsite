@@ -44,9 +44,3 @@
 .sidebar-button:focus{
     outline: none;
 }
-
-.sidebar img {
-    border-radius: 0;
-    height: 1.5rem;
-    width: 1.5rem;
-}
