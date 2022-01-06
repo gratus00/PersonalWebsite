@@ -96,7 +96,6 @@ const Projects = () => {
             </p>
             <img src="/googlemaps.png" title="Google Maps"/> <img src="/android.png" title="Android"/> <img src="/java.png" title = "Java"/>
             </div>
-            
         </div>
     );
 };

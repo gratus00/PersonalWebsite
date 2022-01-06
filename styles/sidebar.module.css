@@ -1,7 +1,7 @@
 .menu {
     display: flex;
     flex-direction: column;
-    padding-top: 20vh;
+    padding-top: calc(40vh - 8rem);
     align-items: center;
     position: fixed;
     background-color: rgb(0, 0, 0);

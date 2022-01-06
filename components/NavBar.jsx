@@ -7,7 +7,7 @@ function NavBar(props) {
     return <nav className={styles.navbar}>
 
             <Link to={"index-section"} smooth={true} duration={1000} offset={-50}>
-                <a className={styles.logoLink}>SHAKIR ABDULLAYEV</a>
+                SHAKIR ABDULLAYEV
             </Link>
             <div className={styles.mobile}></div>
             <Link to={"about-section"} smooth={true} duration={1500} offset={-50} className={styles.desktop}> About</Link>

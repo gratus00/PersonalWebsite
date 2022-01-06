@@ -12,7 +12,7 @@
     padding-right: min(6rem, 5vw);
 
     max-width: min(46.75rem, 65vw);
-    margin-top: 10rem;
+    margin-top: 7rem;
     margin-bottom: 5rem;
 }
 
@@ -42,7 +42,11 @@
 .contacts a{
     text-align: right;
     color: white;
-    margin-left: 0.5rem;
+    margin-left: 0rem;
+}
+
+.contacts button{
+    border-radius: 10px;
 }
 
 .contacts button:active{
