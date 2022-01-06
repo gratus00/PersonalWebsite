@@ -13,6 +13,9 @@ const home = () => {
             <div>
             <Head>
                 <title>Shakir Abdullayev</title>
+                <meta property="og:image" content="/metaimage.png"/>
+                <meta property="og:description" content="Hi! Wanna see my personal website?"/>
+
             </Head>
             </div>
                 <NavBar/>
