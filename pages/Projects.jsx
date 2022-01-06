@@ -1,5 +1,5 @@
 import styles from "../styles/project.module.css";
-
+import Image from "next/image";
 
 const Projects = () => {
     return (
@@ -7,7 +7,7 @@ const Projects = () => {
             <h1>Projects</h1>
             <span>click on projects to see more! <br /><br /></span>
             <div>
-            <h2> <a href="https://github.com/gratus00/PersonalWebsite" target="_blank">Personal Website</a></h2>
+            <h2> <a href="https://github.com/gratus00/PersonalWebsite" target="_blank" rel="noreferrer">Personal Website</a></h2>
             <p> During the time I had on my winter break, I decided to explore an area I have 
                 never explored: Web Development. Every cool computer science person I knew had their own personal website, except for me.
                 It seemed to be a pretty low stake project and enabled me to express myself to an extent. 
@@ -26,12 +26,12 @@ const Projects = () => {
 
                 </p>
 
-                <img src="/react.png" title="React"/> <img src="/nextjs.png" title = "Next.js"/>
+                <Image src="/react.png" title="React" alt=""/> <Image src="/nextjs.png" title = "Next.js" alt=""/>
             </div>
             
             
             <div>
-                <h2><a href="https://github.com/gratus00/Notes-App" target="_blank">Notes App</a></h2>
+                <h2><a href="https://github.com/gratus00/Notes-App" target="_blank" rel="noreferrer">Notes App</a></h2>
                 <p> I created this app as practice for creating Android applications that had
                     persistent memory through the SharedPreferences interface of Android. 
                     The app is exactly what its name is: you take notes in it. These notes can then
@@ -43,22 +43,22 @@ const Projects = () => {
 
                 </p>
                 
-                <img src="/android.png" title="Android"/> <img src="/java.png" title = "Java"/>
+                <Image src="/android.png" title="Android" alt=""/> <Image src="/java.png" title = "Java" alt=""/>
             </div>
             
             
         
             <div>
-            <h2><a href="https://github.com/gratus00/Location-Saver" target="_blank">Location Saver</a></h2>
+            <h2><a href="https://github.com/gratus00/Location-Saver" target="_blank" rel="noreferrer">Location Saver</a></h2>
             <p> Most people today have a device in their pocket that can connect 
                 to satellites in space that by cooperating can give the person their location <b>anywhere in the world  </b>
-                with an <a href="https://www.gps.gov/systems/gps/performance/accuracy/#how-accurate" target="_blank" style={{textDecoration: 'underline'}}>accuracy of a 5 meter radius. </a> 
+                with an <a href="https://www.gps.gov/systems/gps/performance/accuracy/#how-accurate" target="_blank"  rel="noreferrer" style={{textDecoration: "underline"}}>accuracy of a 5 meter radius. </a> 
                 That is one of the coolest thing that humans have achieved in history.
                 <br /> <br />
-                You know what's cooler? I made an app that uses that same technology to enable a user to save locations
+                You know what&quot;s cooler? I made an app that uses that same technology to enable a user to save locations
                 in that same pocket device.
                 <br /> <br />
-                To be more descriptive, I created an Android app that utilizes Google Maps API and Android's GPS libraries,
+                To be more descriptive, I created an Android app that utilizes Google Maps API and Android&quot;s GPS libraries,
                 to enable users to save a location on their phone by simply pressing and holding a location on a map. 
                 <br /> <br />
                 If there also happens to be an address allocated to that location in the Google Maps API, that address saved as the name of that location. 
@@ -66,12 +66,12 @@ const Projects = () => {
                 Feel free to click the header to check out the repository!
 
             </p>
-            <img src="/googlemaps.png" title="Google Maps"/> <img src="/android.png" title="Android"/> <img src="/java.png" title = "Java"/>
+            <Image src="/googlemaps.png" title="Google Maps" alt=""/> <Image src="/android.png" title="Android" alt=""/> <Image src="/java.png" title = "Java" alt=""/>
             </div>
         
 
             <div>
-            <h2> <a href="https://github.com/gratus00/Your-Location-Snapshot" target="_blank">Your Location Snapshot</a> </h2>
+            <h2> <a href="https://github.com/gratus00/Your-Location-Snapshot" target="_blank"  rel="noreferrer">Your Location Snapshot</a> </h2>
             <p> This app was created with a certain scenario in mind: imagine you are stuck in a place
                 that you are not familiar with. You have low battery and you must give precise location information to your family 
                 or friends that are searching for you. 
@@ -94,7 +94,7 @@ const Projects = () => {
                 <br /><br />
                 Feel free to click the header to check out the repository!
             </p>
-            <img src="/googlemaps.png" title="Google Maps"/> <img src="/android.png" title="Android"/> <img src="/java.png" title = "Java"/>
+            <Image src="/googlemaps.png" title="Google Maps" alt=""/> <Image src="/android.png" title="Android" alt=""/> <Image src="/java.png" title = "Java" alt=""/>
             </div>
         </div>
     );

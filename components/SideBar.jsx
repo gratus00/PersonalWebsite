@@ -1,6 +1,7 @@
 import styles from "../styles/sidebar.module.css";
 import {Link, animateScroll as scroll} from "react-scroll";
 import React, {useState} from "react";
+import Image from "next/image";
 // import {Link as Direct} from "react-router-dom";
 
 
@@ -14,8 +15,8 @@ function SideBar(props){
     }
 
     return <div className={styles.sidebar}>
-        <button className={styles['sidebar-button']} onClick={triggerSidebar}> 
-                <img src={"/Menu.png"} alt="menu"/>
+        <button className={styles["sidebar-button"]} onClick={triggerSidebar}> 
+                <Image src={"/Menu.png"} alt="menu"/>
         </button>
         <div className={styles.menu}
         style={{transform: `translatex(${xPosition}vw)`}}> 
