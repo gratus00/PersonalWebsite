@@ -6,6 +6,17 @@
     
 }
 
+.project div{
+    margin-bottom: 5rem; 
+}
+
+.project span{
+    font-size: small;
+    color: rgb(179, 179, 179);
+    margin-left: 1rem;
+}
+
+
 .project h1{
     text-align: start;
 }
@@ -13,5 +24,38 @@
 .project h2{
     text-align: start;
 }
+
+.project p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.project img{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.project a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.project a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.project a:active {
+  text-decoration: underline;
+}
+
+
 
 
