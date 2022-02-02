@@ -7,14 +7,14 @@ const Projects = () => {
             <span>click on project titles to see more! <br /><br /></span>
             <div>
             <h2> <a href="https://devpost.com/software/exchange-guardian" target="_blank" rel="noreferrer">Exchange Guardian</a></h2>
-            <p> This was a project I designed for UTM's PyJaC competition using UiPath Studio. 
+            <p> This was a project I designed for UTM&apos;s PyJaC competition using UiPath Studio. 
                 I automated the process that bothered me quite a bit: checking all Canadian banks for USD-CAD exchange 
                 rates to get the best rate as an international student that has to work with USD. 
                 <br /><br />
                 Using UiPath Studio, UiPath web-scraping package, and the UiPath Forms I scraped data from major canadian 
                 banks, used the <a href="https://www.bankofcanada.ca/valet/docs" target="_blank"  rel="noreferrer" style={{textDecoration: "underline"}}>ValetAPI </a>of the Central Bank of Canada, got the best rates for both buying and selling USD. 
                 After making the adequate comparison, I used UiPath Forms to display the appropriate information. And by that 
-                I mean "If you want to buy/sell USD, go to ____(bankname)".
+                I mean &quot;If you want to buy/sell USD, go to ____(bankname)&quot;.
                 <br /><br />
                 <b>I ended up being one of the winners for the project!</b>  
                 <br /><br />
