@@ -12,7 +12,7 @@ const Projects = () => {
                 rates to get the best rate as an international student that has to work with USD. 
                 <br /><br />
                 Using UiPath Studio, UiPath web-scraping package, and the UiPath Forms I scraped data from major canadian 
-                banks, used the <a href="https://www.bankofcanada.ca/valet/docs" target="_blank"  rel="noreferrer" style={{textDecoration: "underline"}}>ValetAPI </a>of the Central Bank of Canada, got the best rates for both buying and selling USD. 
+                banks, used the <a href="https://www.bankofcanada.ca/valet/docs" target="_blank"  rel="noreferrer" style={{textDecoration: "underline"}}>ValetAPI</a> of the Central Bank of Canada, got the best rates for both buying and selling USD. 
                 After making the adequate comparison, I used UiPath Forms to display the appropriate information. And by that 
                 I mean &quot;If you want to buy/sell USD, go to ____(bankname)&quot;.
                 <br /><br />
