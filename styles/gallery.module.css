@@ -76,3 +76,10 @@ z-index: 10; /* Make sure the image is above other elements when scaled */
     color: #adadad; /* Or any color you prefer */
     font-size: 1rem; /* Or size of your choice */
 }
+
+.imageContainer {
+  position: relative;
+  width: 100%; /* Set to the desired width */
+  height: 0;
+  padding-bottom: 100%; /* Use padding to control aspect ratio (this example is for square images) */
+}
