@@ -40,20 +40,25 @@ z-index: 10; /* Make sure the image is above other elements when scaled */
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
     z-index: 1000;
   }
   
   .modalContent {
-    max-width: 80%;
-    max-height: 80%;
-    overflow: auto;
-  }
-  
-  .modalImage {
-    max-width: 100%;
-    max-height: 100%;
-    display: block; /* Remove extra space below the image */
-  }
+    position: relative;
+    padding: 20px; 
+    max-width: 95vw; 
+    max-height: 95vh; 
+    overflow: hidden;
+}
+
+.modalImage {
+    max-width: 100%;  
+    max-height: 80vh; 
+    display: block;   
+    object-fit: contain; 
+    margin: auto;     
+}
 
 .galleryHeader {
     text-align: center;
