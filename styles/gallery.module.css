@@ -1,0 +1,73 @@
+/* gallery.module.css */
+/* gallery.module.css */
+.image {
+    /* Other styles... */
+    transition: transform 0.3s ease;
+  }
+  
+.image:hover {
+transform: scale(1.05); /* Scales the image up to 105% of its original size */
+z-index: 10; /* Make sure the image is above other elements when scaled */
+}
+  
+
+.masonry {
+    column-count: 2;
+    column-gap: 1em;
+  }
+  
+  @media (min-width: 768px) {
+    .masonry {
+      column-count: 4;
+    }
+  }
+  
+  .masonry img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1em;
+    break-inside: avoid; /* Prevents images from splitting across columns */
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+  }
+  
+  .modalImage {
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* Remove extra space below the image */
+  }
+
+.galleryHeader {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; /* Or any color you prefer */
+}
+
+.galleryTitle {
+    margin: 0;
+    color: #ffffff; /* Or any color you prefer */
+    font-size: 2rem; /* Or size of your choice */
+}
+
+.galleryDescription {
+    color: #adadad; /* Or any color you prefer */
+    font-size: 1rem; /* Or size of your choice */
+}

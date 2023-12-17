@@ -18,6 +18,16 @@
 
 }
 
+.about a:link {
+    text-decoration: underline;
+    color: white;
+  }
+  
+.about a:visited {
+    text-decoration: underline;
+    color: white;
+}
+
 .about button:active{
     background-color: rgb(97, 97, 97);
 

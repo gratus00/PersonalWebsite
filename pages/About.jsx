@@ -2,29 +2,34 @@ import stylesAbout from "../styles/about.module.css";
 import stylesButton from "../styles/button.module.css";
 import Link from "react-scroll/modules/components/Link";
 
+
 const About = () => {
     return (
         <div className={stylesAbout.about} id="about-section">
             <h1>About Me</h1>
+        
             <p>
-                My name is Shakir Abdullayev, and I&apos;m a third-year computer science student at the University of Toronto.
-                I am passionate about different areas of computer science, such as Software Engineering, Cyber-Security, and 
-                Machine Learning to name a few. I am still in the exploration phase of my journey when it comes to Computer Science,
-                alas, I am not confining myself to any specific field. I am planning on spending my time as an undergrad figuring out which
-                areas of CS I am most interested in. 
+                My name is Shakir Abdullayev, and I&apos;m a computer science student at the University of Toronto.
+                I am passionate about different areas of computer science, such as Software Engineering, Cyber-Security, and Distributed Systems.
+                
+                <br /> <br />
+                I am interning as a PEY Software Engineer at <a href="https://www.veeva.com/" target="_blank" rel="noreferrer">Veeva Systems</a> 
+                
+                <span/> from 2023 May to 2024 May where I am working on the Renditions Infrastructure Team which includes the support of all the underlying working and 
+                deployment needs to provide scalable and highly performant Rendition services to Veeva&apos;s customers.
 
                 <br /> <br />
+                Previously I interned as a Devops Software Engineer at <a href="https://www.td.com/ca/en/personal-banking" target="_blank" rel="noreferrer">TD Bank</a>  on the Platforms and Technology Division. 
 
-                Throughout the last few years I have created or been part of projects in and out of school. These range from system design 
-                coursework projects with a team of 4, to small Android applications, to web apps such as this one!
+                {/* Throughout the last few years I have created or been part of projects in and out of school. These range from system design 
+                coursework projects with a team of 4, to small Android applications, to web apps such as this one! */}
 
                 <br /><br />
 
-                My other hobbies include hitting the gym, playing electric guitar pieces, and playing video games. Want to argue on which 
-                guitar solo is the best or whether any Ubisoft game is good (they&apos;re not.)? Hit me up!
+                My other hobbies include the gym, boxing, playing the electric guitar, and film photography. In fact if you want to see 
+                more of my photography, you can check out this page right <a href="/Gallery" target="_blank" rel="noreferrer">here</a> 
                 <br /><br />
-
-                I am currently seeking internships for Summer 2022. You can check out my projects, resume, and contacts below!
+                
             </p>
             <br/>
             <div style={{textAlign: "center"}}>
