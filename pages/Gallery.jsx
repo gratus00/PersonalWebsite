@@ -71,10 +71,10 @@ const Gallery = ({ imagePaths }) => {
         <>
             <NavBar />
             <SideBar />
-            <header className={styles.galleryHeader}>
+            {/* <header className={styles.galleryHeader}>
                 <h1 className={styles.galleryTitle}>Gallery</h1>
                 <p className={styles.galleryDescription}>Check out my collection of film photos. Almost all photos that I take, unfiltered and unedited, are posted here.</p>
-            </header>
+            </header> */}
             
             <div className={styles.masonry}>
                 {imagePaths.map((image, index) => (
