@@ -6,21 +6,21 @@ const Projects = () => {
             <h1>Projects</h1>
             <span>click on project titles to see more! <br /><br /></span>
             <div>
-            <h2> <a href="https://devpost.com/software/exchange-guardian" target="_blank" rel="noreferrer">Exchange Guardian</a></h2>
-            <p> This was a project I designed for UTM&apos;s PyJaC competition using UiPath Studio. 
-                I automated the process that bothered me quite a bit: checking all Canadian banks for USD-CAD exchange 
-                rates to get the best rate as an international student that has to work with USD. 
-                <br /><br />
-                Using UiPath Studio, UiPath web-scraping package, and the UiPath Forms I scraped data from major canadian 
-                banks, used the <a href="https://www.bankofcanada.ca/valet/docs" target="_blank"  rel="noreferrer" style={{textDecoration: "underline"}}>ValetAPI</a> of the Central Bank of Canada, got the best rates for both buying and selling USD. 
-                After making the adequate comparison, I used UiPath Forms to display the appropriate information. And by that 
-                I mean &quot;If you want to buy/sell USD, go to ____(bankname)&quot;.
-                <br /><br />
-                <b>I ended up being one of the winners for the project!</b>  
-                <br /><br />
-                Click the header to check out the devpost submission!
-                </p>
-                <img src="/uipath-vector-logo.svg" title="UiPath" alt=""  style={{width: "6rem", height: "6rem"}} />
+                <h2> <a href="https://devpost.com/software/exchange-guardian" target="_blank" rel="noreferrer">Exchange Guardian</a></h2>
+                <p> This was a project I designed for UTM&apos;s PyJaC competition using UiPath Studio. 
+                    I automated the process that bothered me quite a bit: checking all Canadian banks for USD-CAD exchange 
+                    rates to get the best rate as an international student that has to work with USD. 
+                    <br /><br />
+                    Using UiPath Studio, UiPath web-scraping package, and the UiPath Forms I scraped data from major canadian 
+                    banks, used the <a href="https://www.bankofcanada.ca/valet/docs" target="_blank"  rel="noreferrer" style={{textDecoration: "underline"}}>ValetAPI</a> of the Central Bank of Canada, got the best rates for both buying and selling USD. 
+                    After making the adequate comparison, I used UiPath Forms to display the appropriate information. And by that 
+                    I mean &quot;If you want to buy/sell USD, go to ____(bankname)&quot;.
+                    <br /><br />
+                    <b>I ended up being one of the winners for the project!</b>  
+                    <br /><br />
+                    Click the header to check out the devpost submission!
+                    </p>
+                    <img src="/uipath-vector-logo.svg" title="UiPath" alt=""  style={{width: "6rem", height: "6rem"}} />
             </div>
             <div>
             <h2> <a href="https://github.com/gratus00/PersonalWebsite" target="_blank" rel="noreferrer">Personal Website</a></h2>
@@ -93,6 +93,7 @@ const Projects = () => {
                     or friends that are searching for you. 
                     <br /><br />
                     Well, with <b>Your Location Snapshot</b>, you can open the app that has the following information:
+                </p>
                     <ul>
                         <li>Latitude</li>
                         <li>Longitude</li>
@@ -100,7 +101,7 @@ const Projects = () => {
                         <li>Altitude</li>
                         <li>Address (if it exists).</li>
                     </ul> 
-
+                <p>
                     and just take a screenshot. It is fast, accessible, does not cost large battery power,
                     and does not require any taps on a screen. 
                     
