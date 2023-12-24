@@ -105,13 +105,18 @@ export async function getStaticProps() {
     const imagesDirectory = path.join(process.cwd(), 'public/images');
     const imageFiles = fs.readdirSync(imagesDirectory);
 
-    const imagesWithDimensions = imageFiles.map((fileName) => {
-        const dimensions = imageSize(path.join(imagesDirectory, fileName));
-        return {
-          fileName,
-          ...dimensions,
-        };
-      });
+    const imagesWithDimensions = imageFiles.reduce((acc, fileName) => {
+        try {
+            const dimensions = imageSize(path.join(imagesDirectory, fileName));
+            acc.push({
+                fileName,
+                ...dimensions,
+            });
+        } catch (error) {
+            console.error(`Error processing ${fileName}: ${error.message}`);
+        }
+        return acc;
+    }, []);
 
     return {
         props: {
@@ -119,5 +124,6 @@ export async function getStaticProps() {
         },
     };
 }
+
 
 export default Gallery;
