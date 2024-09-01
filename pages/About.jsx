@@ -13,9 +13,9 @@ const About = () => {
                 I am passionate about different areas of computer science, such as Software Engineering, Cyber-Security, and Distributed Systems.
                 
                 <br /> <br />
-                I am interning as a PEY Software Engineer at <a href="https://www.veeva.com/" target="_blank" rel="noreferrer">Veeva Systems</a> 
+                I interned as a PEY Software Engineer at <a href="https://www.veeva.com/" target="_blank" rel="noreferrer">Veeva Systems</a> 
                 
-                <span/> from 2023 May to 2024 May where I am working on the Renditions Infrastructure Team which includes the support of all the underlying working and 
+                <span/> from 2023 May to 2024 May where I worked on the Renditions Infrastructure Team which includes the support of all the underlying working and 
                 deployment needs to provide scalable and highly performant Rendition services to Veeva&apos;s customers.
 
                 <br /> <br />
@@ -26,7 +26,7 @@ const About = () => {
 
                 <br /><br />
 
-                My other hobbies include the gym, boxing, playing the electric guitar, and film photography. In fact if you want to see 
+                My other hobbies include the gym, boxing, playing the electric guitar, film photography, hiking, and windsurfing. In fact if you want to see 
                 more of my photography, you can check out this page right <a href="/Gallery" target="_blank" rel="noreferrer">here</a> 
                 <br /><br />
                 
