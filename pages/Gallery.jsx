@@ -1,38 +1,38 @@
 // pages/Gallery.jsx
 import fs from 'fs';
 import path from 'path';
-import styles from "../styles/gallery.module.css";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import NavBar from "../components/NavBar";
 import SideBar from "../components/SideBar";
 import Image from 'next/image';
 import imageSize from 'image-size';
+import styles from '../styles/gallery.module.css';
 
 const Modal = ({ imgSrc, alt, onClose, width, height, thumbnailSrc }) => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     if (!imgSrc || !thumbnailSrc) return null;
 
-
     return (
         <div className={styles.modalOverlay} onClick={onClose}>
-            <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
-                <Image 
-                    className={styles.modalImage} 
-                    src={thumbnailSrc} 
-                    alt={alt} 
-                    width={width} 
-                    height={height}
-                    layout="responsive"
-                    style={{ display: isLoaded ? 'none' : 'block' }}
-                />
+            <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+                {!isLoaded && (
+                    <Image 
+                        className={styles.modalImage} 
+                        src={thumbnailSrc} 
+                        alt={alt} 
+                        width={width} 
+                        height={height} 
+                        layout="responsive"
+                    />
+                )}
                 <Image 
                     className={styles.modalImage} 
                     src={imgSrc} 
                     alt={alt} 
                     width={width} 
-                    height={height}
-                    layout="responsive"
+                    height={height} 
+                    layout="responsive" 
                     onLoad={() => setIsLoaded(true)}
                     style={{ display: isLoaded ? 'block' : 'none' }}
                 />
@@ -41,49 +41,40 @@ const Modal = ({ imgSrc, alt, onClose, width, height, thumbnailSrc }) => {
     );
 };
 
-
 const Gallery = ({ imagePaths }) => {
     const [focusedImg, setFocusedImg] = useState(null);
     const [focusedThumbnail, setFocusedThumbnail] = useState(null);
     const [modalImgDimensions, setModalImgDimensions] = useState({ width: 0, height: 0 });
     const [visibleImages, setVisibleImages] = useState([]);
     const [lastImageIndex, setLastImageIndex] = useState(0);
+
     const imagesPerLoad = 10; // Number of images to load per "batch"
 
-    useEffect(() => {
-        // Function to load more images
-        function loadMoreImages() {
-            const newLastIndex = Math.min(lastImageIndex + imagesPerLoad, imagePaths.length);
-            const newImages = imagePaths.slice(lastImageIndex, newLastIndex);
-            setVisibleImages(visibleImages.concat(newImages));
-            setLastImageIndex(newLastIndex);
-        }
+    const loadMoreImages = useCallback(() => {
+        const newLastIndex = Math.min(lastImageIndex + imagesPerLoad, imagePaths.length);
+        const newImages = imagePaths.slice(lastImageIndex, newLastIndex);
+        setVisibleImages((prevImages) => [...prevImages, ...newImages]);
+        setLastImageIndex(newLastIndex);
+    }, [lastImageIndex, imagePaths]);
 
-        // Initial load
+    useEffect(() => {
         loadMoreImages();
 
-        // Event listener for scroll event
-        function handleScroll() {
-            // Check if the user has scrolled to the bottom
+        const handleScroll = () => {
             if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 500) {
                 loadMoreImages();
             }
-        }
+        };
 
-        // Register scroll event listener
         window.addEventListener('scroll', handleScroll);
-
-        // Cleanup function to remove event listener
         return () => window.removeEventListener('scroll', handleScroll);
-    }, [lastImageIndex, imagePaths, visibleImages]); // Dependencies array
-
+    }, [loadMoreImages]);
 
     const handleImageClick = (imgPath, thumbnailPath, width, height) => {
         setFocusedImg(imgPath);
         setFocusedThumbnail(thumbnailPath);
         setModalImgDimensions({ width, height });
     };
-    
 
     return (
         <>
@@ -95,40 +86,30 @@ const Gallery = ({ imagePaths }) => {
             </header>
 
             <div className={styles.masonry}>
-                {imagePaths.map((image, index) => (
-                    <div key={`image-${index}-${image}`} className={styles.gridItem}>
+                {visibleImages.map((image, index) => (
+                    <div key={`image-${index}-${image.fileName}`} className={styles.gridItem}>
                         <Image
                             className={styles.image}
                             src={`/thumbnails/${image.fileName}`}
                             alt={`Image ${index}`}
-                            width={image.width / 2} 
-                            height={image.height / 2}  
+                            width={image.width / 2}
+                            height={image.height / 2}
                             onClick={() => handleImageClick(`/images/${image.fileName}`, `/thumbnails/${image.fileName}`, image.width, image.height)}
                         />
                     </div>
                 ))}
             </div>
-            <Modal
-                imgSrc={focusedImg}
-                thumbnailSrc={focusedThumbnail}
-                alt="Focused Image"
-                onClose={() => setFocusedImg(null)}
-                width={modalImgDimensions.width}
-                height={modalImgDimensions.height}
-            />
 
             {focusedImg && (
-                <Image 
-                    className={styles.modalImage} 
-                    src={focusedImg} 
-                    alt="Focused Image" 
-                    width={modalImgDimensions.width || 100} 
-                    height={modalImgDimensions.height || 100}
-                    layout="responsive"
+                <Modal
+                    imgSrc={focusedImg}
+                    thumbnailSrc={focusedThumbnail}
+                    alt="Focused Image"
+                    onClose={() => setFocusedImg(null)}
+                    width={modalImgDimensions.width}
+                    height={modalImgDimensions.height}
                 />
             )}
-
-                      
         </>
     );
 };
@@ -156,6 +137,5 @@ export async function getStaticProps() {
         },
     };
 }
-
 
 export default Gallery;

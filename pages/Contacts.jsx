@@ -20,7 +20,7 @@ const Contacts = () => {
           
           <h2>Need my resume?</h2>
           <div style={{textAlign: "start" }}>
-            <a  href="/Resume.pdf" download="Abdullayev Shakir Resume.pdf">
+            <a href="/Resume.pdf" download="Abdullayev Shakir Resume.pdf">
                 <button className={buttonStyle.customButton}>Download it!</button></a>
           </div>
 
